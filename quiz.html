@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>プレゼントクイズ🎁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<body class="quiz-page">
+
+<div class="container">
+
+  <!-- ヘッダー -->
+<div class="site-header">
+  🎁 プレゼントクイズ 🎁
+  <button class="back-btn" onclick="location.href='home.html'">＜</button>
+</div>
+  <div id="progress">1 / 5</div>
+
+  <!-- 問題 -->
+  <div id="quizBox">
+    <img id="quizImage" class="quiz-img">
+    <p id="question"></p>
+    <div id="choices"></div>
+  </div>
+
+  <!-- ○×アニメ -->
+  <div id="feedback" class="hidden">
+    <div id="mark"></div>
+  </div>
+
+  <!-- 結果ダイアログ -->
+  <div id="resultOverlay" class="hidden">
+  <div class="result-dialog">
+
+    <img id="resultImage" />
+
+    <div id="resultMark"></div>
+
+    <div id="resultButtons"></div>
+
+  </div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

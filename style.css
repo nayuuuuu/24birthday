@@ -1,0 +1,674 @@
+/* =========================
+   共通ベース
+========================= */
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+}
+
+.home-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url("images/takamatsu1.jpeg") center/cover no-repeat;
+
+  transform: scale(1);
+  animation: bgZoom 15s ease-in-out infinite alternate;
+
+  z-index: -2;
+}
+
+
+@keyframes bgZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.home-page .subtitle {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 60px;
+  opacity: 0.9;
+}
+
+/* メニュー縦並び */
+.home-page .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.home-page .card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+
+.home-page h1 {
+  font-size: 50px;
+  color: white;
+  margin: 100px;          /* ←これに戻す */
+}
+
+.home-page h2 {
+  position: relative;
+  font-size: 40px;
+  color: white;
+
+  margin-top: 10px;   /* 上に余白 → 下に押し出される */
+  margin-bottom: 10px;
+
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.home-page .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 30px;
+}
+
+/* ホバー */
+.home-page h2:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   コンテナ
+========================= */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  gap: 450px; /* ←これでh1とh2の距離調整 */
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* =========================
+   ヘッダー
+========================= */
+
+
+/* ヘッダー */
+.site-header {
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  background: rgba(166, 124, 82, 0.15); /* 大人ベージュ */
+  color: #5a3e1b;
+}
+
+
+.site-header small {
+  display: block;
+  font-size: 40px;
+  opacity: 0.7;
+}
+
+
+/* ⭐地図エリアを完全に分離 */
+.map-wrapper {
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  padding: 20px 40px;
+  font-size: 45px;
+  font-weight: bold;
+
+  border-radius: 12px;
+  border: none;
+
+  background: #a67c52; /* 茶色 */
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* 押したとき */
+.back-btn:hover {
+  background: #a67c52;
+}
+
+/* =========================
+   トップ
+========================= */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* =========================
+   クイズ
+========================= */
+
+.quiz-page {
+  margin: 0;
+  background: #f6f0e8;
+  color: #333;
+}
+
+.quiz-page .site-header {
+  width: 100vw;          /* ←これ重要 */
+  margin-left: calc(50% - 50vw); /* ←中央ズレ補正 */
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 50px;
+  font-weight: 900;
+
+  background: rgba(166, 124, 82, 0.15);
+  color: #5a3e1b;
+
+  position: relative;
+}
+
+.quiz-page .back-btn {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding: 18px 28px;
+  font-size: 40px;
+  font-weight: bold;
+
+  border-radius: 12px;
+  border: none;
+
+  background: #a67c52;
+  color: white;
+}
+
+.quiz-page #progress {
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  margin: 20px 0;
+  color: #a67c52;
+}
+
+.quiz-page #question {
+  font-size: 30px;
+  font-weight: 800;
+
+  text-align: center;
+  margin: 25px 15px;
+
+  line-height: 1.6;
+}
+
+.quiz-page .quiz-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border: 4px solid #000;
+  border-radius: 10px;
+}
+
+.quiz-page #choices {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;   /* ←これが“間隔の本体” */
+  margin-top: 10px;
+}
+
+.quiz-page #choices button {
+  width: 100%;
+  padding: 22px;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  border-radius: 45px;
+  border: 3px solid #5e401c;
+
+  background: #a67c52;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+
+  margin: 0;   /* ←これ重要（gapと競合するため消す） */
+}
+
+.quiz-page #choices button:hover {
+  background: #b08961;
+  transform: scale(1.02);
+}
+
+
+/* ○× */
+/* ○×オーバーレイ */
+.quiz-page #feedback {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ○×本体 */
+.quiz-page #mark {
+  font-size: 320px;          /* ←ここが重要（もっとデカく） */
+  font-weight: 900;
+  line-height: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  /* 見た目強化 */
+  text-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  -webkit-text-stroke: 6px rgba(0,0,0,0.15);
+
+  transform: scale(1.05);
+  animation: popMark 0.25s ease-out;
+}
+
+/* ポップアニメ */
+@keyframes popMark {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+/* 色 */
+.correct { color: #ff2d6d; }
+.wrong { color: #2f6bff; }
+
+/* 紙吹雪は最前面でOK */
+canvas.confetti-canvas {
+  position: fixed !important;
+  inset: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+
+/* =========================
+   オーバーレイ（クイズ専用）
+========================= */
+.quiz-page #resultOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+/* =========================
+   ダイアログ本体
+========================= */
+.quiz-page .result-dialog {
+  width: 92%;
+  height: 65%;
+  background: #f6f0e8;
+  border-radius: 24px;
+  padding: 20px;
+
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* =========================
+   結果画像（額縁風）
+========================= */
+.quiz-page #resultImage {
+
+  flex: 0 0 auto;
+  width: auto;           /* 幅は自動 */
+  height: calc(40vh);    /* 高さをモーダルの1/3くらい */
+  aspect-ratio: 3 / 4;   /* ★4:3比率を維持 */
+  object-fit: cover;     /* 中央をトリミング */
+  border-radius: 12px;
+
+  border-radius: 14px;
+
+ /* 黒額縁 */
+  border: 8px solid #2b2b2b;   /* 外枠（黒） */
+  padding: 6px;
+  background: #111;     
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.15),
+    inset 0 0 0 2px #c9b49a;
+}
+
+/* =========================
+   結果テキスト
+========================= */
+.quiz-page #resultMark {
+  font-size: 50px;
+  font-weight: bold;
+  color: #5e401c;
+}
+
+/* =========================
+   ボタン
+========================= */
+.quiz-page #resultButtons button {
+  width: 70%;
+  margin-top: 10px;
+
+  padding: 18px;
+  font-size: 40px;
+
+  border-radius: 40px;
+  border: 3px solid #5e401c;
+
+  background: #a67c52;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.quiz-page #resultButtons button:hover {
+  background: #b08961;
+}
+
+
+/* =========================
+   しおり
+========================= */
+
+.itinerary-page {
+  background: #f6f0e8; /* 薄いベージュ */
+  color: #333;
+}
+
+.itinerary-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.itinerary-page .timeline {
+  padding: 0;
+  list-style: none;
+}
+
+.itinerary-page .timeline li {
+  background: #fffdf9;
+  border-left: 5px solid #a67c52;
+  margin: 15px 0;
+  padding: 15px 15px 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+.itinerary-page .timeline li span {
+  font-weight: bold;
+  color: #a67c52;
+  margin-right: 10px;
+}
+
+.hotel-card,
+.spot-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.hotel-card img,
+.spot-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* =========================
+   Googleマップ
+========================= */
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================
+   モーダル
+========================= */
+#dialog {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;             /* ここは flex に */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  opacity: 0;                /* 最初は透明 */
+  pointer-events: none;      /* 最初はクリック無効 */
+  transform: scale(0.95);
+  transition: all 0.35s ease;
+}
+
+#dialog.show {
+  opacity: 1;
+  pointer-events: auto;      /* showでクリック可能に */
+  transform: scale(1);
+}
+
+/* =========================
+   ダイアログ本体
+========================= */
+.dialog-box {
+  width: 92%;
+  height: 80%;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* =========================
+   画像エリア（4:3）
+========================= */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  flex: 0 0 auto; /* 高さ固定にしない */
+  justify-content: center;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: auto;           /* 幅は自動 */
+  height: calc(40vh);    /* 高さをモーダルの1/3くらい */
+  aspect-ratio: 3 / 4;   /* ★4:3比率を維持 */
+  object-fit: cover;     /* 中央をトリミング */
+  border-radius: 12px;
+}
+
+#spotTitle {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 30px; /* モーダルの上から20px */
+  margin-bottom: 20px; /* 画像との間隔 */
+  color: #333;
+}
+
+/* 丸ぽちエリア */
+.slider-dots {
+  position: absolute;
+  bottom: 500px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-dots span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #bbb;
+}
+
+.slider-dots span.active {
+  background-color: #333;
+}
+
+/* =========================
+   テキスト（画像の下に20px）
+========================= */
+#spotText {
+  position: static;   /* ← absoluteやめる！！ */
+
+  width: 90%;
+  margin: 70px auto;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+
+  background: color(from color srgb r g b); /* ← 半透明白 */
+  backdrop-filter: blur(6px);           /* ← ふわっと感 */
+
+  border-radius: 15px;
+
+  pointer-events: auto;
+}
+
+/* =========================
+   しおりボタン（下から30px）
+========================= */
+#actionBtn {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 25px;
+  font-size: 30px;
+  border-radius: 40px;
+  border: 3px solid #a67c52;
+  background: #5a3e1b;
+  color: white;
+ cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* =========================
+   閉じるボタン（下から30px）
+========================= */
+.dialog-box {
+  position: relative; /* ボタンを絶対配置するため必須 */
+}
+
+.dialog-box button {
+  position: absolute;
+  bottom: 5%;   
+  left: 50%;
+  transform: translateX(-50%); /* 横中央 */
+  
+  width: 50%;         /* 横幅は少し狭く */
+  padding: 25px 0;    /* 高さ大きめ */
+  font-size: 30px;
+  font-weight: 900;
+
+  border-radius: 40px; /* 丸く */
+  border: 3px solid #5e401c; /* 濃い茶色の枠 */
+  background: #a67c52;  /* 薄いブラウンの背景 */
+  color: white;       /* ダイアログと同じ薄いグレー文字 */
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+/* ホバー時に少し明るくする */
+.dialog-box button:hover {
+  background: #b08961;
+  border-color: #6b4922;
+}
+
+/* 非表示（安全用） */
+.hidden {
+  display: none !important;
+}
