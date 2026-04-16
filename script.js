@@ -103,7 +103,7 @@ function showResult(isCorrect) {
     if (current === quiz.length - 1) {
       const btn = document.createElement("button");
       btn.textContent = "トップへ戻る";
-      btn.onclick = () => location.href = "home.html";
+      btn.onclick = () => location.href = "index.html";
       buttons.appendChild(btn);
     } else {
       const btn = document.createElement("button");
