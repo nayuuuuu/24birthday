@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   height: 100%;
   font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
-  overflow: hidden;
+ overflow: hidden; 
 }
 
 .home-page {
@@ -538,7 +538,6 @@ canvas.confetti-canvas {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: relative;
 }
 
 /* =========================
@@ -548,10 +547,8 @@ canvas.confetti-canvas {
   display: flex;
   overflow-x: auto;
   gap: 10px;
-  flex: 0 0 auto;
+  flex: 0 0 auto; /* 高さ固定にしない */
   justify-content: center;
-
-  position: relative;  /* ←これ追加！！！！ */
 }
 
 .slider img {
@@ -575,17 +572,11 @@ canvas.confetti-canvas {
 /* 丸ぽちエリア */
 .slider-dots {
   position: absolute;
-
-  bottom: 120px;   /* ←ここ変える（画像の下に出す） */
-  left: 50%;
-  transform: translateX(-50%);
-
+  bottom: 500px;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 8px;
-
-  z-index: 10;
-  
 }
 
 .slider-dots span {
@@ -649,25 +640,11 @@ canvas.confetti-canvas {
    閉じるボタン（下から30px）
 ========================= */
 .dialog-box {
-  position: relative;
-
-  width: 92%;
-  height: 80vh;        /* ←固定 */
-  max-height: 80vh;
-
-  background: #f2f2f2;
-  border-radius: 20px;
-  padding: 15px;
-
-  display: flex;
-  flex-direction: column;
-
-  overflow: hidden;
+  position: relative; /* ボタンを絶対配置するため必須 */
 }
 
-
 .dialog-box button {
-  position: static;
+  position: absolute;
   bottom: 5%;   
   left: 50%;
   transform: translateX(-50%); /* 横中央 */
