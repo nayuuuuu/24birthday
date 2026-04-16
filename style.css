@@ -648,11 +648,25 @@ canvas.confetti-canvas {
    閉じるボタン（下から30px）
 ========================= */
 .dialog-box {
-  position: relative; /* ボタンを絶対配置するため必須 */
+  position: relative;
+
+  width: 92%;
+  height: 80vh;        /* ←固定 */
+  max-height: 80vh;
+
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
 }
 
+
 .dialog-box button {
-  position: absolute;
+  position: static;
   bottom: 5%;   
   left: 50%;
   transform: translateX(-50%); /* 横中央 */
