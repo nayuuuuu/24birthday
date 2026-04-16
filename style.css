@@ -581,6 +581,7 @@ canvas.confetti-canvas {
   display: flex;
   justify-content: center;
   gap: 8px;
+  z-index: 10; /* ←これ追加（隠れ防止） *
 }
 
 .slider-dots span {
