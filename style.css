@@ -546,8 +546,10 @@ canvas.confetti-canvas {
   display: flex;
   overflow-x: auto;
   gap: 10px;
-  flex: 0 0 auto; /* 高さ固定にしない */
+  flex: 0 0 auto;
   justify-content: center;
+
+  position: relative;  /* ←これ追加！！！！ */
 }
 
 .slider img {
@@ -572,15 +574,13 @@ canvas.confetti-canvas {
 .slider-dots {
   position: absolute;
 
-  bottom: 20px;   /* ← 下から固定 */
+  bottom: -40px;   /* ←ここ変える（画像の下に出す） */
   left: 50%;
   transform: translateX(-50%);
 
   display: flex;
   justify-content: center;
   gap: 8px;
-
-  width: auto;
 }
 
 .slider-dots span {
