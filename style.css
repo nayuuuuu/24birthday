@@ -574,7 +574,7 @@ canvas.confetti-canvas {
 .slider-dots {
   position: absolute;
 
-  bottom: 500px;   /* ←ここ変える（画像の下に出す） */
+  bottom: 300px;   /* ←ここ変える（画像の下に出す） */
   left: 50%;
   transform: translateX(-50%);
 
