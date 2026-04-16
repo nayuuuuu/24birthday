@@ -537,6 +537,7 @@ canvas.confetti-canvas {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 
 /* =========================
@@ -574,13 +575,15 @@ canvas.confetti-canvas {
 .slider-dots {
   position: absolute;
 
-  bottom: 700px;   /* ←ここ変える（画像の下に出す） */
+  bottom: 120px;   /* ←ここ変える（画像の下に出す） */
   left: 50%;
   transform: translateX(-50%);
 
   display: flex;
   justify-content: center;
   gap: 8px;
+
+  z-index: 10;
   
 }
 
