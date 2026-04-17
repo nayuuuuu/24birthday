@@ -633,8 +633,8 @@ canvas.confetti-canvas {
   padding: 25px;
   font-size: 30px;
   border-radius: 40px;
-  border: 3px solid #a67c52;
-  background: #5a3e1b;
+  border: 3px solid #5e401c;
+  background: #a67c52;
   color: white;
  cursor: pointer;
   transition: all 0.25s ease;
