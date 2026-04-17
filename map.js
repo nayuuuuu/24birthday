@@ -20,7 +20,7 @@ const spots = [
   { name: "神宮外苑", lat: 35.67338, lng: 139.72040, text: "写真無理矢理付き合わせちゃった。。でもこの時にマフラーのお揃い写真撮れて幸せ！<br>朝からありがとう！", images: ["images/gaien1.jpeg","images/gaien2.jpeg","images/gaien4.jpeg"] },
   { name: "コナズ珈琲", lat: 35.77238, lng: 139.99896, text: "コナズ珈琲デビューの場所！<br>この時のドライブでゆくんが歌ってた強烈な尾崎豊は、今でも忘れられないの", images: ["images/konas1.jpeg"] },
   { name: "恵比寿", lat: 35.64685, lng: 139.71008, text: "ゆくんの美容院後を高確率で見られる大好きな駅！またおそば屋さんとラーメン屋さん行く！", images: ["images/ebisu1.jpeg","images/ebisu2.jpeg"] },
-  { name: "東京駅", lat: 35.68115, lng: 139.76701, text: "いつも京葉線から帰ってくれてありがとう！<br>よだれ垂らしたの本当に乾くてなゆがふき取るゆがふき取る", images: ["images/tokyo1.jpeg","images/tokyo2.jpeg","images/tokyo3.jpeg","images/tokyo4.jpeg"] },
+  { name: "東京駅", lat: 35.68115, lng: 139.76701, text: "いつも京葉線から帰ってくれてありがとう！<br>よだれ垂らしてたの本当に可愛くて、次はぜったいになゆがふき取る", images: ["images/tokyo1.jpeg","images/tokyo2.jpeg","images/tokyo3.jpeg","images/tokyo4.jpeg"] },
   { name: "宇都宮", lat: 36.55923, lng: 139.89847, text: "餃子また食べたいな。。<br>もう餃子食べた後はキスしないしチャミスルも飲まない！", images: ["images/utsunomiya1.jpeg","images/utsunomiya2.jpeg","images/utsunomiya3.jpeg"] },
   { name: "大谷資料館", lat: 36.60020, lng: 139.82471, text: "ゆくんの服が岩と一体化してて感動だったな。<br>とんでもない化け物撮れちゃった場所でもあるけど。。", images: ["images/oya1.jpeg","images/oya2.jpeg","images/oya4.jpeg","images/oya5.jpeg"] },
   { name: "麻布台ヒルズ", lat: 35.66167, lng: 139.74080, text: "お散歩もしたし、誕生日ランチも連れて行ってくれた思い出の場所なの！<br>ここのファミマ！！で買ったヒートテック、ちょっと薄くなっちゃった。。", images: ["images/azabudai3.jpeg","images/azabudai1.jpeg","images/azabudai2.jpeg"] },
