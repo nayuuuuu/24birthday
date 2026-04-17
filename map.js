@@ -148,8 +148,8 @@ function createMarker(spot, color) {
     optimized: false,
     icon: {
       url: `https://maps.google.com/mapfiles/ms/icons/${color}-dot.png`,
-      scaledSize: new google.maps.Size(85, 85),
-      anchor: new google.maps.Point(42, 42)
+      scaledSize: new google.maps.Size(95, 95),
+      anchor: new google.maps.Point(47, 60)
     }
   });
 
