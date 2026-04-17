@@ -185,40 +185,78 @@ function openSpot(spot) {
   currentIndex = 0;
 
   renderSlide();
+  addSwipe();
   document.getElementById("dialog").classList.add("show");
 }
 
 // スライド描画
 function renderSlide() {
-  const slider = document.getElementById("slider");
+  const track = document.getElementById("sliderTrack");
   const dotsContainer = document.querySelector(".slider-dots");
 
-  slider.innerHTML = "";
+  track.innerHTML = "";
   dotsContainer.innerHTML = "";
 
-  // 画像
-  const img = document.createElement("img");
-  img.src = currentImages[currentIndex];
-  slider.appendChild(img);
+  currentImages.forEach((src, i) => {
+    const img = document.createElement("img");
+    img.src = src;
+    track.appendChild(img);
 
-  // 丸ぽち
-  currentImages.forEach((_, i) => {
     const dot = document.createElement("span");
-    dot.className = (i === currentIndex) ? "active" : "";
     dotsContainer.appendChild(dot);
   });
 
-  // クリックで次の画像
-  img.onclick = () => nextSlide();
+  updateSlide();
+}
 
-  // タッチイベント（スマホ）
-  let startX = 0;
-  img.ontouchstart = (e) => { startX = e.touches[0].clientX; };
-  img.ontouchend = (e) => {
-    const endX = e.changedTouches[0].clientX;
-    if (startX - endX > 30) nextSlide();
-    else if (endX - startX > 30) prevSlide();
-  };
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
+
+function addSwipe() {
+  const track = document.getElementById("sliderTrack");
+
+  track.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+    track.style.transition = "none";
+  });
+
+  track.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+
+    currentX = e.touches[0].clientX;
+    const diff = currentX - startX;
+
+    track.style.transform =
+      `translateX(calc(-${currentIndex * 100}% + ${diff}px))`;
+  });
+
+  track.addEventListener("touchend", () => {
+    isDragging = false;
+
+    const diff = currentX - startX;
+
+    track.style.transition = "transform 0.35s ease";
+
+    if (diff < -80 && currentIndex < currentImages.length - 1) {
+      currentIndex++;
+    } 
+    else if (diff > 80 && currentIndex > 0) {
+      currentIndex--;
+    }
+
+    updateSlide();
+  });
+}
+
+function updateSlide() {
+  const track = document.getElementById("sliderTrack");
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  document.querySelectorAll(".slider-dots span").forEach((d, i) => {
+    d.classList.toggle("active", i === currentIndex);
+  });
 }
 
 function nextSlide() {
