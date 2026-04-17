@@ -63,13 +63,13 @@ const spots = [
   { name: "UNI COFFEE", lat: 35.44758, lng: 139.64083, text: "フラッペ美味しかったね！うにぃうにぃ珈琲って言ってたの懐かしい<br>男がフラッペ買うのは漢だよ！！！", images: ["images/uni1.jpeg","images/uni2.jpeg"] },
   { name: "八柱", lat: 35.79175, lng: 139.93799, text: "帰り送ってくれてすごく嬉しかった！<br>途中でお腹いたくなるまでがセットな気がする<br>車でも電車でもなゆの元に来てくれるゆくんが本当に大好き！", images: ["images/yabashira.jpeg","images/yabashira3.jpeg"] },
   { name: "渋谷", lat: 35.65823, lng: 139.70163, text: "実はパルコ行ったことなかったんだ。素敵なお店沢山だね！<br>靴擦れして歩きにくかった時にサポートしてくれて凄くうれしかったな", images: ["images/Shibuya1.jpeg","images/Shibuya2.jpeg"] },
-  { name: "大桟橋", lat: 35.45134, lng: 139.64736, text: "ここの夜景一緒に見れてよかっな。ここのエレベーター不思議でちょっと興奮してて可愛かったな", images: ["images/osanbashi1.jpeg","images/osanbashi2.jpeg","images/osanbashi3.jpeg"] },
+  { name: "大桟橋", lat: 35.45134, lng: 139.64736, text: "ここの夜景一緒に見れて嬉しい！ここのエレベーター不思議でちょっと興奮してて可愛かったな", images: ["images/osanbashi1.jpeg","images/osanbashi2.jpeg","images/osanbashi3.jpeg"] },
   { name: "シンシン", lat: 35.69937, lng: 139.98687, text: "初めて会った場所だったね！野球帰りだったの覚えてる！ちょっとチャラくてなゆの好きなおしゃれ眼鏡ボーイが来てちょっと気になっちゃった。<br>この時のなゆ、見る目あったな", images: ["images/sinsin1.jpeg"] },
   { name: "津田沼", lat: 35.69165, lng: 140.02040, text: "初めて津田沼行ったけど、イオン綺麗で全部ご飯屋さん美味しそうだったな。。<br>次は赤門！<br>またあのズボン履いてきて、ファブリーズかけてもらってほしい", images: ["images/tsuda1.jpeg"] },
   { name: "新松戸", lat: 35.82586, lng: 139.92085, text: "ここも聖地だね！！！夏にお祭り少し行けて嬉しかったの懐かしい！今後ともお世話になります！", images: ["images/shima1.jpeg"] },
   { name: "表参道", lat: 35.66536, lng: 139.71209, text: "今までブランド店入るの怖かったけどゆくんのお陰で抵抗なくなった！大人の階段上れたの！<br>またお洋服探しに行こうね！", images: ["images/omote1.jpeg","images/omote2.jpeg"] },
   { name: "千葉", lat: 35.61342, lng: 140.11327, text: "思った以上に栄えててびっくりした！野球朝から見れて幸せだったな！今度は公園行きたい！", images: ["images/chiba1.jpeg"] },
-  { name: "お蕎麦屋さん", lat: 35.26778, lng: 139.01234, text:"この時はお蕎麦も美味しかったけど、この写真の筋肉が好きすぎて大好きなの。筋肉に埋もれたい", images: ["images/99.jpeg"] },
+  { name: "お蕎麦屋さん", lat: 35.26778, lng: 139.01234, text:"この時はお蕎麦も美味しかったけど、この写真の筋肉がムキムキいい太さで大好きなの。筋肉に埋もれたい", images: ["images/99.jpeg"] },
   { name: "赤レンガ倉庫", lat: 35.45271, lng: 139.64294, text:"ちょっとだけ立ち寄ったね！実はここにUNIコーヒーあるんだよ！次はクリスマスマーケット行きたいな。。！", images: ["images/akarenga1.jpeg"] },
 
 
