@@ -7,7 +7,7 @@ const quiz = [
   },
   {
     question: "② 目玉プレゼントは？",
-    image: "images/q2.jpeg",
+    image: "images/q6.jpeg",
     choices: ["ネックレス", "財布", "リング"],
     answer: 2
   },
