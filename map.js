@@ -40,7 +40,7 @@ const spots = [
   { name: "江ノ島", lat: 35.29976, lng: 139.4820, text: "リス見たくてわくわくしてて可愛かったな。今度はキャンドルナイトの時も行きたい！競馬も一緒に賭けたの良い思い出なの！", images: ["images/enoshima2.jpeg","images/enoshima3.jpeg","images/enoshima4.jpeg","images/enoshima6.jpeg","images/enoshima7.jpeg"] },
   { name: "ゆくんのおうち", lat: 35.64140, lng: 140.09682, text: "ゆくんがいつも送ってくれるワッツアップ結構好きなの。あと酔っ払ってると電話高頻度でかかってくるから嬉しいの!たまに変な音聞こえるけど笑", images: ["images/inage1.jpeg","images/inage2.jpeg","images/inage4.jpeg","images/inage7.jpeg","images/inage8.jpeg","images/inage10.jpeg"] },
   { name: "ピザパ", lat: 35.64582, lng: 140.04004, text: "ゆくんがピザ受け取るところ上から見れたの新鮮だったの。ピザすぐなくなっちゃって食いしん坊な2人だったな", images: ["images/makuhari3.jpeg","images/makuhari2.jpeg","images/makuhari4.jpeg"] },
-  { name: "幕張の浜", lat: 35.63964, lng: 140.03492, text: "二日連続で行ってくれてありがとう！風強すぎて砂まみれでアウトレット行ったの良い思い出なの", images: ["images/makuhari5.jpeg","images/hama1.jpeg","images/hama2.jpeg","images/hama3.jpeg"] },
+  { name: "幕張の浜", lat: 35.63964, lng: 140.03492, text: "二日連続で行ってくれてありがとう！<br> 風強すぎて砂まみれでアウトレット行ったの良い思い出なの", images: ["images/makuhari5.jpeg","images/hama1.jpeg","images/hama2.jpeg","images/hama3.jpeg"] },
   { name: "PIE&COFFEEmamenakano", lat: 35.64438, lng: 140.05155, text: "まさかの知り合いのお父さんのカフェだったなんて！一緒にシェアして食べれてうれしかったの！UFOキャッチャーも沢山とれて幸せだった！", images: ["images/pie1.jpeg","images/pie2.jpeg"] },
   { name: "武蔵野美術大学", lat: 35.73029, lng: 139.44730, text: "ゆくんの知らない一面を見た新鮮な一日だったな。やっぱりゆくんと過ごした日が長いの羨ましくてしょうがないや", images: ["images/geidai1.jpeg","images/geidai2.jpeg"] },
   { name: "原宿", lat: 35.67231, lng: 139.70348, text: "この時のかっこいい髪の毛忘れられないの。横顔大好き", images: ["images/mac1.jpeg","images/mac2.jpeg"] },
