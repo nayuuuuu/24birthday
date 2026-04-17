@@ -470,10 +470,12 @@ canvas.confetti-canvas {
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
   line-height: 1.6;
+  font-size: 30px;     /* ←少し大きく */
+  font-weight: 700;  
 }
 
 .itinerary-page .timeline li span {
-  font-weight: bold;
+  font-weight: 800;
   color: #a67c52;
   margin-right: 10px;
 }
