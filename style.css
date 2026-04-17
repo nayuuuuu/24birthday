@@ -550,29 +550,20 @@ canvas.confetti-canvas {
    画像エリア（4:3）
 ========================= */
 .slider {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  flex: 0 0 auto; /* 高さ固定にしない */
+  justify-content: center;
 }
 
-#sliderTrack img {
-  width: 100%;
-  flex-shrink: 0;
-  height: 40vh;
-  object-fit: cover;
+.slider img {
+  flex: 0 0 auto;
+  width: auto;           /* 幅は自動 */
+  height: calc(40vh);    /* 高さをモーダルの1/3くらい */
+  aspect-ratio: 3 / 4;   /* ★4:3比率を維持 */
+  object-fit: cover;     /* 中央をトリミング */
   border-radius: 12px;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-#sliderTrack img {
-  width: 100%;
-  flex-shrink: 0;
-  height: 40vh;
-  object-fit: cover;
-  border-radius: 12px;
-  user-select: none;
-  -webkit-user-drag: none;
 }
 
 #spotTitle {
@@ -665,7 +656,6 @@ canvas.confetti-canvas {
   transform: translateX(-50%); /* 横中央 */
   
   box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-
   width: 50%;         /* 横幅は少し狭く */
   padding: 25px 0;    /* 高さ大きめ */
   font-size: 30px;
