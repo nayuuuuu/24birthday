@@ -425,6 +425,7 @@ canvas.confetti-canvas {
 
   padding: 18px;
   font-size: 40px;
+  font-weight: 900;
 
   border-radius: 45px;
   border: 3px solid #5e401c;
@@ -438,6 +439,7 @@ canvas.confetti-canvas {
 
 .quiz-page #resultButtons button:hover {
   background: #b08961;
+  border-color: #6b4922;
 }
 
 
