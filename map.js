@@ -145,6 +145,7 @@ function createMarker(spot, color) {
     position: { lat: spot.lat, lng: spot.lng },
     map,
     title: spot.name,
+    optimized: false,
     icon: {
       url: `https://maps.google.com/mapfiles/ms/icons/${color}-dot.png`,
       scaledSize: new google.maps.Size(85, 85),
