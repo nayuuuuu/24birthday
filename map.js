@@ -20,7 +20,7 @@ const spots = [
   { name: "いちょう並木", lat: 35.67338, lng: 139.72040, text: "写真無理矢理付き合わせちゃった。。でもこの時にマフラーのお揃い写真撮れて幸せ！<br>朝からありがとう！", images: ["images/gaien1.jpeg","images/gaien2.jpeg","images/gaien4.jpeg","images/gaien7.jpeg","images/gaien8.jpeg","images/gaien9.jpeg"] },
   { name: "コナズ珈琲", lat: 35.77238, lng: 139.99896, text: "コナズ珈琲デビューの場所！<br>この時のドライブでゆくんが歌ってた強烈な尾崎豊は、今でも忘れられないの", images: ["images/konas1.jpeg"] },
   { name: "恵比寿", lat: 35.64685, lng: 139.71008, text: "ゆくんの美容院後を高確率で見られる大好きな駅！またおそば屋さんとラーメン屋さん行く！", images: ["images/ebisu1.jpeg","images/ebisu2.jpeg"] },
-  { name: "東京駅", lat: 35.68115, lng: 139.76701, text: "いつも京葉線から帰ってくれてありがとう！<br>よだれ垂らしてたの本当に可愛くて、次はぜったいになゆがふき取る", images: ["images/tokyo1.jpeg","images/tokyo2.jpeg","images/tokyo3.jpeg","images/tokyo4.jpeg"] },
+  { name: "東京駅", lat: 35.68115, lng: 139.76701, text: "いつも京葉線から帰ってくれてありがとう！<br>よだれ垂らしてたの本当に可愛くて、次はぜったいになゆがふき取る<br>ちなみにゴボウの天ぷらは釜たけじゃなくて新宿御苑のうどん屋さんで食べた！", images: ["images/tokyo1.jpeg","images/tokyo2.jpeg","images/tokyo3.jpeg","images/tokyo4.jpeg","images/tokyo8.jpeg"] },
   { name: "宇都宮", lat: 36.55923, lng: 139.89847, text: "餃子また食べたいな。。<br>もう餃子食べた後はキスしないしチャミスルも飲まない！", images: ["images/utsunomiya1.jpeg","images/utsunomiya2.jpeg","images/utsunomiya3.jpeg","images/utsunomiya5.jpeg"] },
   { name: "大谷資料館", lat: 36.60020, lng: 139.82471, text: "ゆくんの服が岩と一体化してて感動だったな。<br>とんでもない化け物撮れちゃった場所でもあるけど。。", images: ["images/oya1.jpeg","images/oya2.jpeg","images/oya4.jpeg","images/oya5.jpeg"] },
   { name: "麻布台ヒルズ", lat: 35.66167, lng: 139.74080, text: "お散歩もしたし、誕生日ランチも連れて行ってくれた思い出の場所なの！<br>ここのファミマ！！で買ったヒートテック、ちょっと薄くなっちゃった。。", images: ["images/azabudai3.jpeg","images/azabudai1.jpeg","images/azabudai2.jpeg"] },
@@ -71,6 +71,8 @@ const spots = [
   { name: "千葉", lat: 35.61342, lng: 140.11327, text: "思った以上に栄えててびっくりした！野球朝から見れて幸せだったな！今度は公園行きたい！", images: ["images/chiba1.jpeg"] },
   { name: "お蕎麦屋さん", lat: 35.26778, lng: 139.01234, text:"この時はお蕎麦も美味しかったけど、この写真の筋肉がムキムキいい太さで大好きなの。筋肉に埋もれたい", images: ["images/99.jpeg"] },
   { name: "赤レンガ倉庫", lat: 35.45271, lng: 139.64294, text:"ちょっとだけ立ち寄ったね！実はここにUNIコーヒーあるんだよ！次はクリスマスマーケット行きたいな。。！", images: ["images/akarenga1.jpeg"] },
+  { name: "祐天寺", lat: 35.63725, lng: 139.69282, text:"初上陸！ピザ調べてくれてありがとう！美味しし買ったし、お散歩もずっと楽しくて1.4キロが秒だった！ほぼ2週間ぶりのゆくんで会えただけで嬉しかった！", images: ["images/yutenji1.jpeg","images/yutenji2.jpeg"] },
+  { name: "中目黒", lat: 35.65006, lng: 139.69248, text:"スタバまさか整理券で4Fまであるとは思わなかったの！ゆくんティラミスで喜んでて可愛かったけど、珈琲お気に召さなかったみたいだ。いつもなゆのが美味しそうにみえちゃうの可愛いな！！", images: ["images/nakame1.jpeg","images/nakame2.jpeg","images/nakame3.jpeg","images/nakame4.jpeg","images/nakame5.jpeg"] }
 
 
 ]
