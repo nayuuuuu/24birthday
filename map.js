@@ -70,9 +70,13 @@ const spots = [
   { name: "表参道", lat: 35.66536, lng: 139.71209, text: "今までブランド店入るの怖かったけどゆくんのお陰で抵抗なくなった！大人の階段上れたの！<br>またお洋服探しに行こうね！", images: ["images/omote1.jpeg","images/omote2.jpeg"] },
   { name: "千葉", lat: 35.61342, lng: 140.11327, text: "思った以上に栄えててびっくりした！野球朝から見れて幸せだったな！今度は公園行きたい！", images: ["images/chiba1.jpeg"] },
   { name: "お蕎麦屋さん", lat: 35.26778, lng: 139.01234, text:"この時はお蕎麦も美味しかったけど、この写真の筋肉がムキムキいい太さで大好きなの。筋肉に埋もれたい", images: ["images/99.jpeg"] },
-  { name: "赤レンガ倉庫", lat: 35.45271, lng: 139.64294, text:"ちょっとだけ立ち寄ったね！実はここにUNIコーヒーあるんだよ！次はクリスマスマーケット行きたいな。。！", images: ["images/akarenga1.jpeg"] },
-  { name: "祐天寺", lat: 35.63725, lng: 139.69282, text:"初上陸！ピザ調べてくれてありがとう！美味しし買ったし、お散歩もずっと楽しくて1.4キロが秒だった！ほぼ2週間ぶりのゆくんで会えただけで嬉しかった！", images: ["images/yutenji1.jpeg","images/yutenji2.jpeg"] },
-  { name: "中目黒", lat: 35.65006, lng: 139.69248, text:"スタバまさか整理券で4Fまであるとは思わなかったの！ゆくんティラミスで喜んでて可愛かったけど、珈琲お気に召さなかったみたいだ。いつもなゆのが美味しそうにみえちゃうの可愛いな！！", images: ["images/nakame1.jpeg","images/nakame2.jpeg","images/nakame3.jpeg","images/nakame4.jpeg","images/nakame5.jpeg"] }
+  { name: "赤レンガ倉庫", lat: 35.45271, lng: 139.64294, text:"ちょっとだけ立ち寄ったね！実はここにUNIコーヒーあるんだよ！<br>次はクリスマスマーケット行きたいな。。！", images: ["images/akarenga1.jpeg"] },
+  { name: "祐天寺", lat: 35.63725, lng: 139.69282, text:"初上陸！ピザ調べてくれてありがとう！美味しし買ったし、お散歩もずっと楽しくて1.4キロが秒だった！<br>ほぼ2週間ぶりのゆくんで会えただけで嬉しかった！", images: ["images/yutenji1.jpeg","images/yutenji2.jpeg"] },
+  { name: "中目黒", lat: 35.65006, lng: 139.69248, text:"スタバまさか整理券で4Fまであるとは思わなかったの！<br>ゆくんティラミスで喜んでて可愛かったけど、珈琲お気に召さなかったみたいだ。いつもなゆのが美味しそうにみえちゃうの可愛いな！！", images: ["images/nakame1.jpeg","images/nakame2.jpeg","images/nakame3.jpeg","images/nakame4.jpeg","images/nakame5.jpeg"] },
+  { name: "ラーメン博物館", lat: 35.51008, lng: 139.61472, text:"念願の龍上海食べれて幸せ！ゆくんお腹いっぱいでひいひいしてて可愛かったな<br>夜は大泣きしたけど良い思い出", images: ["images/sinyoko1.jpeg","images/sinyoko2.jpeg","images/sinyoko3.jpeg","images/sinyoko4.jpeg","images/sinyoko5.jpeg","images/sinyoko6.jpeg"] },
+  { name: "養老渓谷", lat: 35.25516, lng: 140.16164, text:"思った以上に自然とライトが良い感じで綺麗だった！<br>運転してくれてありがとう！一緒に行けて良かったしずっと楽しかった！", images: ["images/yoro1.jpeg","images/yoro2.jpeg","images/yoro3.jpeg","images/yoro4.jpeg","images/yoro5.jpeg","images/yoro6.jpeg","images/yoro7.jpeg","images/yoro8.jpeg"] },
+  { name: "ニッケコルトンプラザ", lat: 35.71665, lng: 139.93448, text:"会った瞬間2人とも目腫れてて可愛かったな<br>映画も面白くて、せっかくなら1作目も一緒に見よう！<br>ポップコーンは思った通り中盤にはもうほぼなくなってた笑", images: ["images/nikke1.jpeg"] },
+  { name: "カフェ", lat: 35.81208, lng: 139.94570, text:"ずっと気になっていたカフェ、連れて行ってくれてありがとう！<br>絵本読んだり、ゆくんみたいな置物沢山あって可愛かったな<br>行けて大満足！", images: ["images/old1.jpeg","images/old2.jpeg"] }
 
 
 ]
