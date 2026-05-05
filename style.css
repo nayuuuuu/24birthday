@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   height: 100%;
   font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
- overflow: hidden; 
+   overflow-x: hidden; /* 横スクロールだけ禁止 */ 
 }
 
 .home-page {
@@ -452,6 +452,8 @@ canvas.confetti-canvas {
 .itinerary-page {
   background: #f6f0e8; /* 薄いベージュ */
   color: #333;
+    height: 100vh;
+  overflow-y: auto;
 }
 
 .itinerary-page .container {
