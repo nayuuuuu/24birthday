@@ -83,59 +83,71 @@ const spots = [
 
 const karuizawaSpots = [
   {
-    name: "軽井沢駅",
-    lat: 36.34277,
-    lng: 138.63533,
-    text: "新幹線の到着・出発！",
-    type: "station",
-    arrival: "10:33 東京発 → 11:36 軽井沢着",
-    departure: "18:09 軽井沢発 → 19:12 東京着",
-    images: ["images/eki.jpg"]
+    name: "ルグラン軽井沢ホテル",
+    lat: 36.29505,
+    lng: 138.60733,
+    text: `今回の宿泊先<br>
+      <a href="https://www.legrand-karuizawaresort.jp/" target="_blank">
+      👉 公式サイトを見る
+      </a>`,
+    link: "itinerary.html",
+    images: ["images/todayhotel.jpg"]
   },
   {
-  name: "ルグラン軽井沢ホテル",
-  lat: 36.29505,
-  lng: 138.60733,
-  text: `今回の宿泊先<br>
-         <a href="https://www.legrand-karuizawaresort.jp/" target="_blank">
-         👉 公式サイトを見る
-         </a>`,
-  link: "itinerary.html",
-  images: ["images/todayhotel.jpg"]
-},
-{
-  name: "旧軽井沢銀座",
-  lat: 36.35798,
-  lng: 138.63461,
-  text: `1日目のお昼！食べ歩きスポット<br>
-         <a href="https://rurubu.jp/andmore/article/24422" target="_blank">
-         👉 食べ歩き情報
-         </a>`,
-  link: "itinerary.html",
-  images: ["images/ginza.jpg"]
-},
-{
-  name: "白糸の滝",
-  lat: 36.41486,
-  lng: 138.59186,
-  text: `2日目の観光スポット<br>
-         <a href="https://karuizawa-kankokyokai.jp/spot/23206/" target="_blank">
-         👉 詳細を見る
-         </a>`,
-  link: "itinerary.html",
-  images: ["images/shiraito.jpg"]
-},
-{
-  name: "軽井沢ショッピングプラザ",
-  lat: 36.34118,
-  lng: 138.63313,
-  text: `ここで2日目お昼？ショッピング<br>
-         <a href="https://www.karuizawa-psp.jp/" target="_blank">
-         👉 公式サイト
-         </a>`,
-  link: "itinerary.html",
-  images: ["images/outlet.jpg"]
-}
+    name: "旧軽井沢銀座",
+    lat: 36.35798,
+    lng: 138.63461,
+    text: `2日目のお昼！食べ歩きできる！<br>
+      <a href="https://rurubu.jp/andmore/article/24422" target="_blank">
+      👉 食べ歩き情報
+      </a>`,
+    link: "itinerary.html",
+    images: ["images/ginza.jpg"]
+  },
+  {
+    name: "白糸の滝",
+    lat: 36.41486,
+    lng: 138.59186,
+    text: `2日目の観光スポット<br>
+      <a href="https://karuizawa-kankokyokai.jp/spot/23206/" target="_blank">
+      👉 詳細を見る
+      </a>`,
+    link: "itinerary.html",
+    images: ["images/shiraito.jpg"]
+  },
+  {
+    name: "ハルニレテラス",
+    lat: 36.34166,
+    lng: 138.60603,
+    text: `ここで1日目のご飯！協会とかもさらっと見れそう！<br>
+      <a href="https://www.hoshino-area.jp/harunireterrace/" target="_blank">
+      👉 公式サイト
+      </a>`,
+    link: "itinerary.html",
+    images: ["images/harunire.jpg"]
+  },
+  {
+    name: "軽井沢千住博美術館",
+    lat: 36.34009,
+    lng: 138.63964,
+    text: `1日目の観光スポット候補！建築が綺麗そうだ<br>
+      <a href="https://www.senju-museum.jp/" target="_blank">
+      👉 公式サイト
+      </a>`,
+    link: "itinerary.html",
+    images: ["images/senju.jpg"]
+  },
+  {
+    name: "軽井沢タリアセン",
+    lat: 36.32764,
+    lng: 138.62779,
+    text: `1日目の観光スポット候補！ちょっとしたゴルフとか、ゴーカートも楽しめる！軽井沢の定番スポット<br>
+      <a href="https://www.karuizawataliesin.com/" target="_blank">
+      👉 公式サイト
+      </a>`,
+    link: "itinerary.html",
+    images: ["images/taliesin.jpg"]
+  }
 ];
 
 function initMap() {
