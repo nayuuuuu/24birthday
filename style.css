@@ -460,6 +460,41 @@ canvas.confetti-canvas {
   padding: 20px;
 }
 
+/* =========================
+   しおり内リンク強化
+========================= */
+.itinerary-page a {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #a67c52;
+  text-decoration: underline;
+}
+
+.itinerary-page a:hover {
+  opacity: 0.7;
+}
+
+
+/* =========================
+   候補ブロック（今回追加）
+========================= */
+.choice-box {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f3ebe2;
+  border: 2px dashed #a67c52;
+}
+
+.choice-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #5a3e1b;
+  margin-bottom: 5px;
+}
+
 
 .itinerary-page .timeline {
   padding: 0;
