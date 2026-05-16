@@ -12,7 +12,7 @@ const spots = [
   { name: "彫刻の森美術館", lat: 35.24556, lng: 139.05077, text: "暑すぎてアートどころじゃなかったけど、行くことに意味がある！！<br>ゆくんと箱根の思い出GETだぜ☆", images: ["images/tyokoku1.jpeg","images/tyokoku2.jpeg"] },
   { name: "一ヶ月記念日", lat: 35.44600, lng: 139.64536, text: "一ヶ月記念で泊まったね！すっぴん恥ずかしかったけど、可愛いって言ってくれたから、今の何でもさらけ出すなゆがいるんだ！<br>いつもありがとう！大好き！", images: ["images/hyatt1.jpeg","images/hyatt2.jpeg","images/hyatt5.jpeg"] },
   { name: "i2 cafe", lat: 35.66651, lng: 139.71519, text: "ゆくんとおしゃれなカフェ行ったのに、鼻くそ付けてきたの今でも忘れないよ。<br>ゆくん結構な確率で自分が頼んだメニュー後悔してることあってニヤニヤしちゃう", images: ["images/i21.jpeg","images/i24.jpeg"] },
-  { name: "なゆくん爆誕！！", lat: 35.78230, lng: 139.89882, text: "一番の思い出の場所だね！ここで勇気出してくれてありがとう！<br>今日までずっと、なゆのこと雑に扱わない所が本当に嬉しい！<br>ちょっと考え方が甘くて価値観違う時もあるけど、それ含んでゆくんかわいがる", images: ["images/matsudo1.jpeg","images/matsudo.jpeg","images/matsud5.jpeg"] },
+  { name: "なゆくん爆誕！！", lat: 35.78230, lng: 139.89882, text: "一番の思い出の場所だね！ここで勇気出してくれてありがとう！<br>今日までずっと、なゆのこと雑に扱わない所が本当に嬉しい！<br>ちょっと考え方が甘くて価値観違う時もあるけど、それ含んでゆくんかわいがる", images: ["images/matsudo1.jpeg","images/matsudo.jpeg","images/matsudo5.jpeg"] },
   { name: "ディズニーシー", lat: 35.62690, lng: 139.88513, text: "お誕生日ディズニーで連れて行ってくれた！彼氏とディズニー夢だったの！ゆくんと叶えられて幸せ！", images: ["images/sea2.jpeg","images/sea1.jpeg","images/sea3.jpeg"] },
   { name: "南船橋", lat: 35.68234, lng: 139.99562, text: "散歩していろいろ迷ったのにずっと楽しかったの！また海岸沿い歩きたいな", images: ["images/minamihunabashi1.jpeg","images/minamihunabashi2.jpeg","images/minafuna1.jpeg",] },
   { name: "鳥居", lat: 35.20298, lng: 139.02576, text: "ゆくん相当眠かっただろうに写真並んでくれてありがとう！良い写真撮れた☆", images: ["images/tori1.jpeg"] },
@@ -25,7 +25,7 @@ const spots = [
   { name: "大谷資料館", lat: 36.60020, lng: 139.82471, text: "ゆくんの服が岩と一体化してて感動だったな。<br>とんでもない化け物撮れちゃった場所でもあるけど。。", images: ["images/oya1.jpeg","images/oya2.jpeg","images/oya4.jpeg","images/oya5.jpeg"] },
   { name: "麻布台ヒルズ", lat: 35.66167, lng: 139.74080, text: "お散歩もしたし、誕生日ランチも連れて行ってくれた思い出の場所なの！<br>ここのファミマ！！で買ったヒートテック、ちょっと薄くなっちゃった。。", images: ["images/azabudai3.jpeg","images/azabudai1.jpeg","images/azabudai2.jpeg"] },
   { name: "酒々井アウトレット", lat: 35.71382, lng: 140.29410, text: "運転してくれてありがとう！<br>たまたま花火一緒に見れてうれしかったな", images: ["images/sisui1.jpeg","images/sisui2.jpeg"] },
-  { name: "山下公園", lat: 35.44604, lng: 139.64976, text: "ゆくんと付き合って良かったなって改めて思った場所No.1なの。<br>ギリギリまでなゆの意見を尊重して寄り添ってくれてありがとう！<br>ゆくんかっこよかった！", images: ["images/yamashitapark1.jpeg","images/yamashitapark2.jpeg","images/yamashitapark3.jpeg","images/yamashitapark5.jpeg","images/yamashitapark8.jpeg",,"images/yamashitapark7.jpeg"] },
+  { name: "山下公園", lat: 35.44604, lng: 139.64976, text: "ゆくんと付き合って良かったなって改めて思った場所No.1なの。<br>ギリギリまでなゆの意見を尊重して寄り添ってくれてありがとう！<br>ゆくんかっこよかった！", images: ["images/yamashitapark1.jpeg","images/yamashitapark2.jpeg","images/yamashitapark3.jpeg","images/yamashitapark5.jpeg","images/yamashitapark8.jpeg","images/yamashitapark7.jpeg"] },
   { name: "なゆの誕生日ホテル", lat: 35.62658, lng: 139.77065, text: "まさか憧れのホテルに泊まれるとは思ってなかった！<br>ゆくん大好き！スニーカーずっとお気に入りで宝物！", images: ["images/hilton1.jpeg","images/hilton3.jpeg","images/hilton4.jpeg","images/hilton5.jpeg","images/hilton6.jpeg","images/hilton8.jpeg","images/hilton7.jpeg"] },
   { name: "お台場海浜公園", lat: 35.63020, lng: 139.77570, text: "何回か行った中で、靴擦れでローソンから始まったデート、雨風強くて歩くのが大変だったこと、一緒に景色見ながらおいしいディナーご馳走してくれたことが思い出深いの！", images: ["images/odaiba1.jpeg","images/odaiba2.jpeg","images/odaiba3.jpeg","images/odaiba5.jpeg","images/odaiba8.jpeg","images/odaiba9.jpeg","images/odaiba10.jpeg","images/odaiba12.jpeg"] },
   { name: "六本木ヒルズ", lat: 35.65945, lng: 139.72987, text: "会社帰りにイルミネーション行ったの懐かしい！<br>階段じゃんけんに付き合ってくれるゆくん大好き！", images: ["images/roppongi2.jpeg","images/roppongi1.jpeg"] },
@@ -106,8 +106,8 @@ const karuizawaSpots = [
   },
   {
     name: "白糸の滝",
-    lat: 36.41486,
-    lng: 138.59186,
+    lat: 36.41048,
+    lng: 138.59263,
     text: `2日目の観光スポット<br>
       <a href="https://karuizawa-kankokyokai.jp/spot/23206/" target="_blank">
       👉 詳細を見る
@@ -117,8 +117,8 @@ const karuizawaSpots = [
   },
   {
     name: "ハルニレテラス",
-    lat: 36.34166,
-    lng: 138.60603,
+    lat: 36.35947,
+    lng: 138.59021,
     text: `ここで1日目のご飯！協会とかもさらっと見れそう！<br>
       <a href="https://www.hoshino-area.jp/harunireterrace/" target="_blank">
       👉 公式サイト
@@ -128,8 +128,8 @@ const karuizawaSpots = [
   },
   {
     name: "軽井沢千住博美術館",
-    lat: 36.34009,
-    lng: 138.63964,
+    lat: 36.33556,
+    lng: 138.59729,
     text: `1日目の観光スポット候補！建築が綺麗そうだ<br>
       <a href="https://www.senju-museum.jp/" target="_blank">
       👉 公式サイト
@@ -139,8 +139,8 @@ const karuizawaSpots = [
   },
   {
     name: "軽井沢タリアセン",
-    lat: 36.32764,
-    lng: 138.62779,
+    lat: 36.32883,
+    lng: 138.59604,
     text: `1日目の観光スポット候補！ちょっとしたゴルフとか、ゴーカートも楽しめる！軽井沢の定番スポット<br>
       <a href="https://www.karuizawataliesin.com/" target="_blank">
       👉 公式サイト
