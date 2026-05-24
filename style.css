@@ -574,15 +574,13 @@ canvas.confetti-canvas {
 .dialog-box {
   width: 92%;
   height: 90dvh; /* ← 修正 */
-
-  background: #f6f0e8;
+  background: #f6f0e8;;
   border-radius: 20px;
   padding: 15px;
 
   display: flex;
   flex-direction: column;
-
-  overflow-y: auto; /* ← 修正 */
+ overflow-y: auto; /* ← 修正 */
   overflow-x: hidden; /* ← 修正 */
 
   position: relative; /* ← 追加 */
@@ -619,13 +617,12 @@ canvas.confetti-canvas {
 
 /* 丸ぽちエリア */
 .slider-dots {
+  position: absolute;
+  bottom: 500px;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-
-  margin-top: 12px; /* ← 修正 */
-
-  position: static; /* ← 修正 */
 }
 
 .slider-dots span {
@@ -647,7 +644,7 @@ canvas.confetti-canvas {
   position: static;   /* ← absoluteやめる！！ */
 
   width: 90%;
- margin: 25px auto; /* ← 修正 */
+  margin: 70px auto;
 
   padding: 20px;
   box-sizing: border-box;
@@ -664,9 +661,6 @@ canvas.confetti-canvas {
   border-radius: 15px;
 
   pointer-events: auto;
-
-  flex: 1; /* ← 追加 */
-  overflow-y: auto; /* ← 追加 */
 }
 
 /* =========================
@@ -696,8 +690,7 @@ canvas.confetti-canvas {
 }
 
 .dialog-box button {
- position: static; /* ← 修正 */
-  margin: 20px auto 10px; /* ← 追加 */
+  position: absolute;
   bottom: 5%;   
   left: 50%;
   transform: translateX(-50%); /* 横中央 */
