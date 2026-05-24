@@ -617,12 +617,12 @@ canvas.confetti-canvas {
 
 /* 丸ぽちエリア */
 .slider-dots {
-  position: absolute;
-  bottom: 500px;
-  left: 0;
-  width: 100%;
   display: flex;
   justify-content: center;
+
+ margin-top: 12px; /* ← 修正 */
+
+  position: static; /* ← 修正 */
 }
 
 .slider-dots span {
