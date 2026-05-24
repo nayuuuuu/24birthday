@@ -644,11 +644,13 @@ canvas.confetti-canvas {
   position: static;   /* ← absoluteやめる！！ */
 
   width: 90%;
-  margin: 70px auto;
-
+  margin: 25px auto; /* ← 修正 */
   padding: 20px;
   box-sizing: border-box;
 
+  flex: 1; /* ← 追加 */
+  overflow-y: auto; /* ← 追加 */
+  
   font-size: 30px;
   font-weight: 600;
   line-height: 1.5;
