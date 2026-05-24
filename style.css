@@ -648,7 +648,7 @@ canvas.confetti-canvas {
   padding: 20px;
   box-sizing: border-box;
 
-  flex: 1; /* ← 追加 */
+ 
   overflow-y: auto; /* ← 追加 */
   
   font-size: 30px;
